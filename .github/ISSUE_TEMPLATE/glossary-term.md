@@ -8,8 +8,8 @@ assignees: ''
 ---
 
 **New term or update existing**
-[ ] New
-[ ] Existing
+- [ ] New
+- [ ] Existing
 
 **Term**
 What is the term?
