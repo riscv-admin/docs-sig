@@ -1,0 +1,12 @@
+[cols="2,1,3,16"]
+|===
+|Bit Range | Bits | Name |Attributes
+{%- set br = namespace(lsb=0) -%}
+{% for fld in reg %}
+|{{ fld.bits + br.lsb - 1 }}:{{ br.lsb }}
+|{{ fld.bits }}
+|{% if fld.attr is defined %}{{ fld.name }}{% endif %}
+|{% if fld.attr is defined %}{{ fld.attr }}{% endif %}
+{%- set br.lsb = br.lsb + fld.bits -%}
+{% endfor %}
+|===

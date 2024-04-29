@@ -1,0 +1,36 @@
+[cols="2,1,3,16"]
+|===
+|Bit Range | Bits | Name |Attributes
+|6:0
+|7
+|opcode
+|['AMO', 'AMO', 'AMO', 'AMO', 'AMO', 'AMO', 'AMO', 'AMO']
+|11:7
+|5
+|rd
+|['dest', 'dest', 'dest', 'dest', 'dest', 'dest', 'dest', 'dest']
+|14:12
+|3
+|funct3
+|['width=0/1', 'width=0/1', 'width=0/1', 'width=0/1', 'width=0/1', 'width=0/1', 'width=0/1', 'width=0/1']
+|19:15
+|5
+|rs1
+|['addr', 'addr', 'addr', 'addr', 'addr', 'addr', 'addr', 'addr']
+|24:20
+|5
+|rs2
+|['src', 'src', 'src', 'src', 'src', 'src', 'src', 'src']
+|25:25
+|1
+|
+|
+|26:26
+|1
+|aq
+|['ordering', 'ordering', 'ordering', 'ordering', 'ordering', 'ordering', 'ordering', 'ordering']
+|31:27
+|5
+|funct5
+|['AMOSWAP.B/H', 'AMOADD.B/H', 'AMOAND.B/H', 'AMOOR.B/H', 'AMOXOR.B/H', 'AMOMAX[U].B/H', 'AMOMIN[U].B/H', 'AMOCAS.B/H']
+|===
