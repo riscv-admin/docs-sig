@@ -1,0 +1,34 @@
+# Wavedrom input
+
+## Overview
+
+Demonstrate wavedrom input converted to other outputs (ex: table)
+
+## Example
+
+.Zabha register
+[wavedrom, zabha-ext-wavedrom-reg, svg]
+....
+include::zabha-ext-reg-wavedrom.json5[]
+....
+
+.Zabha register
+include::zabha-ext-reg-table.adoc[]
+
+
+## Implementation details
+
+* install prerequisites:
+** `pip install jinja2-cli[json5]`
+* pull out existing wavedrom definitions from adoc file into a separate json5 file
+* replace that with include
+* write a jinja2 template to convert wavedrom json5 into asciidoc
+[source, jinja]
+----
+include::wavedrom-bitfield-to-adoc-table.j2[]
+----
+* write Makefile to build the adoc table:
+[source, make]
+----
+include::Makefile[]
+----
