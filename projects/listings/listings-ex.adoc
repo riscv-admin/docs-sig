@@ -1,0 +1,99 @@
+# Examples of configuring prefixed caption labels
+:toc: left
+:toclevels: 4
+:appendix-caption: Appendix
+:example-caption: Example
+:figure-caption: Figure
+:listing-caption: Listing
+:table-caption: Table
+
+[preface]
+== List of listings
+list-of::listing[hide_empty_section=true, enhanced_rendering=true]
+
+[preface]
+== List of examples
+list-of::examples[hide_empty_section=true, enhanced_rendering=true]
+
+[preface]
+== List of literals
+list-of::literals[hide_empty_section=true, enhanced_rendering=true]
+
+## Overview
+
+You can configure how AsciiDoc https://docs.asciidoctor.org/asciidoc/latest/blocks/add-title/#captioned-titles[ adds a prefixed caption label].  Example would be "Figure" for figures or images and "Table" for tables.
+
+This doc will explore those uses with the hope of defining how it might be done for RISC-V specs.
+
+## Block examples
+
+https://docs.asciidoctor.org/asciidoc/latest/blocks/#block-style[AsciiDoc doc] explaining these examples in more detail.  Also https://docs.asciidoctor.org/asciidoc/latest/blocks/delimited/[delimited blocks]
+
+
+### Block examples using delimiters
+
+.example of an example block with delimiters
+====
+body of example block example
+====
+
+.example of a source listing block with delimiters
+[source,ruby]
+----
+puts "Hello, World!"
+----
+
+.example of a quote block with delimiters
+____
+body of quote
+____
+
+.example of sidebar block with delimiters
+****
+body of sidebar block example
+****
+
+.example of a literal block with delimiters
+....
+body of literal block example
+....
+
+### Block examples from paragraphs
+
+.example of an example block from paragraph
+[example]
+body of example block example
+
+.example of a listing block from paragraph
+[source, shell]
+echo "Hello World"
+
+.example of a quote block from paragraph
+[quote]
+body of quote
+
+### Generic delimiter with label
+
+[literal]
+--
+body
+
+of
+
+literal
+--
+
+### Redefine the prefixed caption label
+
+:listing-caption: Local Listing
+.example of a source listing block redefined prefix caption label
+[source,ruby]
+----
+puts "Hello, World!"
+----
+
+## Findings
+
+* asciidoctor-lists extension doesn't generate lists-of-examples
+* three different ways to create a block type
+* you can redefine the prefixed caption label but this probably isn't a good idea
