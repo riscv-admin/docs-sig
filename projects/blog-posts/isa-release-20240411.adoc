@@ -5,9 +5,13 @@ RISC-V International
 :keywords: RISC-V, ISA, Release, Specifications
 :docinfo: html
 
-The official ratified versions of the RISC-V Volume 1, Unprivileged Specification and the RISC-V Volume 2, Privileged Specification were made public on December 13, 2019 and December 3, 2021 respectively.  These versions of the Instruction Set Architecture (ISA) have served the community enormously since their release.  Companies were launched, RISC-V chips were born, and billion of cores were shipped in products from earbuds to servers.
+The RISC-V International community is pleased to announce that new ratified versions of the RISC-V Unprivileged and Privileged specifications are now generally available. 
 
-Since their release, RISC-V ISA development has been accellerating at an enormous rate and the time has come to integrate that work into a new set of fully integrated ISA specifications as versions 20240411.
+RISC-V is an open standard Instruction Set Architecture (ISA) enabling a new era of processor innovation through open collaboration. These specs were developed by almost 4000 RISC-V members across 70 countries, who contributed and collaborated to make this new version possible.
+
+The official ratified versions of the RISC-V Volume 1, Unprivileged Specification and the RISC-V Volume 2, Privileged Specification were made public on December 13, 2019 and December 3, 2021 respectively. These versions of the Instruction Set Architecture (ISA) have served the community enormously since their release. Companies were launched, RISC-V chips were born, and billion of cores were shipped in products from earbuds to servers.
+
+Since their release, RISC-V ISA development has been accelerating at an tremendous rate and the time has come to integrate that work into a new set of fully integrated ISA specifications as versions 20240411.
 
 Included additions to the Unprivileged Specification are:
 
