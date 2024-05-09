@@ -1,0 +1,15 @@
+// Attempt at a document header for a single blog post
+= RISC-V ISA Specifications Release Announcement
+RISC-V International
+:description: Official announcment of the 20240411 version of the Unprivileged and Privileged ISA documents.
+:keywords: RISC-V, ISA, Release, Specifications
+:docinfo: html
+
+The official ratified versions of the RISC-V Volume 1, Unprivileged Specification and the RISC-V Volume 2, Privileged Specification were made public on December 13, 2019 and December 3, 2021 respectively.  These versions of the Instruction Set Architecture (ISA) have served the community enormously since their release.  Companies were launched, RISC-V chips were born, and billion of cores were shipped in products from earbuds to servers.
+
+Since their release, RISC-V ISA development has been accellerating at an enormous rate and the time has come to integrate that work into a new set of fully integrated ISA specifications as versions 20240411.
+
+Included additions to the Unprivileged Specification are:
+
+Included additions to the Privileged Specification are:
+
