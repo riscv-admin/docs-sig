@@ -11,5 +11,121 @@ Since their release, RISC-V ISA development has been accellerating at an enormou
 
 Included additions to the Unprivileged Specification are:
 
+* The inclusion of all ratified extensions through March 2024.
+* The draft Zam extension has been removed, in favor of the definition of a misaligned atomicity granule PMA.
+
+[%autowidth,float="center",align="center",cols="^,<,^",options="header"]
+|===
+|Base |Version |Status
+|*RV32I* |*2.1* |*Ratified*
+|*RV32E* |*2.0* |*Ratified*
+|*RV64E* |*2.0* |*Ratified*
+|*RV64I* |*2.1* |*Ratified*
+|_RV128I_ |_1.7_ |_Draft_
+
+h|Extension h|Version h|Status
+
+|*Zifencei* |*2.0* |*Ratified*
+|*Zicsr* |*2.0* |*Ratified*
+|*Zicntr* |*2.0* |*Ratified*
+|*Zihintntl* |*1.0* |*Ratified*
+|*Zihintpause* |*2.0* |*Ratified*
+|*Zimop* | *1.0* | *Ratified*
+|*Zicond* | *1.0* |*Ratified*
+|*M* |*2.0* |*Ratified*
+|*Zmmul* |*1.0* |*Ratified*
+|*A* |*2.1* |*Ratified*
+|*Zawrs* |*1.01* |*Ratified*
+|*Zacas* |*1.0* |*Ratifed*
+|*RVWMO* |*2.0* |*Ratified*
+|*Ztso* |*1.0* |*Ratified*
+|*CMO* |*1.0* |*Ratified*
+|*F* |*2.2* |*Ratified*
+|*D* |*2.2* |*Ratified*
+|*Q* |*2.2* |*Ratified*
+|*Zfh* |*1.0* |*Ratified*
+|*Zfhmin* |*1.0* |*Ratified*
+|*Zfa* |*1.0* |*Ratified*
+|*Zfinx* |*1.0* |*Ratified*
+|*Zdinx* |*1.0* |*Ratified*
+|*Zhinx* |*1.0* |*Ratified*
+|*Zhinxmin* |*1.0* |*Ratified*
+|*C* |*2.0* |*Ratified*
+|*Zce |*1.0* |*Ratified*
+|*B* |*1.0* |*Ratified*
+|_P_ |_0.2_ |_Draft_
+|*V* |*1.0* |*Ratified*
+|*Zbkb |*1.0* |*Ratified*
+|*Zbkc |*1.0* |*Ratified*
+|*Zbkx |*1.0* |*Ratified*
+|*Zk |*1.0* |*Ratified*
+|*Zks |*1.0* |*Ratified*
+|*Zvbb |*1.0* |*Ratified*
+|*Zvbc |*1.0* |*Ratified*
+|*Zvkg |*1.0* |*Ratified*
+|*Zvkned |*1.0* |*Ratified*
+|*Zvknhb |*1.0* |*Ratified*
+|*Zvksed |*1.0* |*Ratified*
+|*Zvksh |*1.0* |*Ratified*
+|*Zvkt |*1.0* |*Ratified*
+|===
+
 Included additions to the Privileged Specification are:
+
+* The inclusion of all ratified extensions through March 2024.
+
+[%autowidth,float="center",align="center",cols="^,<,^",options="header",]
+|===
+|Module |Version |Status
+|_Machine ISA_ +
+*Smstateen Extension* +
+*Smcsrind/Sscsrind Extension* +
+*Smepmp* +
+**Smcntrpmf* +
+*Smrnmi Extension* +
+*Smcdeleg* +
+_Supervisor ISA_ +
+*Svade Extension* +
+*Svnapot Extension* + 
+*Svpbmt Extension* +  
+*Svinval Extension* + 
+*Svadu Extension* +
+*Sstc* +
+*Sscofpmf* +
+*Hypervisor ISA*  
+
+|_1.13_ +
+*1.0.0* +
+*1.0.0* +
+*1.0.0* +
+*1.0.0* +
+*1.0.0* +
+_1.13_ +
+*1.0.0* +
+_0.1_ +
+*1.0* +
+*1.0* +
+*1.0* +
+*1.0* +
+*1.0* +
+*1.0* +
+*1.0*
+
+|_Draft_ +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+_Draft_ +
+*Ratified* +
+_Draft_ +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+*Ratified* +
+*Ratified*
+|===
 

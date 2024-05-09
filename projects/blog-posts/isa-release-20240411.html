@@ -453,13 +453,357 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Included additions to the Unprivileged Specification are:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>The inclusion of all ratified extensions through March 2024.</p>
+</li>
+<li>
+<p>The draft Zam extension has been removed, in favor of the definition of a misaligned atomicity granule PMA.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content center">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Base</th>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-center valign-top">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>RV32I</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.1</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>RV32E</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>RV64E</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>RV64I</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.1</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><em>RV128I</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1.7</em></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><em>Draft</em></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-center valign-top"><p class="tableblock">Extension</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Version</p></th>
+<th class="tableblock halign-center valign-top"><p class="tableblock">Status</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zifencei</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zicsr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zicntr</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zihintntl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zihintpause</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zimop</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zicond</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>M</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zmmul</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>A</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.1</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zawrs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.01</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zacas</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratifed</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>RVWMO</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ztso</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>CMO</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>F</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.2</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>D</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.2</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Q</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.2</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zfh</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zfhmin</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zfa</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zfinx</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zdinx</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zhinx</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Zhinxmin</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>C</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>2.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zce</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>B</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><em>P</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>0.2</em></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><em>Draft</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>V</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zbkb</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zbkc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zbkx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvbb</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvbc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvkg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvkned</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvknhb</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvksed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvksh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">*Zvkt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Ratified</strong></p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>Included additions to the Privileged Specification are:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>The inclusion of all ratified extensions through March 2024.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content center">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Module</th>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-center valign-top">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><em>Machine ISA</em><br>
+<strong>Smstateen Extension</strong><br>
+<strong>Smcsrind/Sscsrind Extension</strong><br>
+<strong>Smepmp</strong><br>
+<strong>*Smcntrpmf</strong><br>
+<strong>Smrnmi Extension</strong><br>
+<strong>Smcdeleg</strong><br>
+<em>Supervisor ISA</em><br>
+<strong>Svade Extension</strong><br>
+<strong>Svnapot Extension</strong><br>
+<strong>Svpbmt Extension</strong><br>
+<strong>Svinval Extension</strong><br>
+<strong>Svadu Extension</strong><br>
+<strong>Sstc</strong><br>
+<strong>Sscofpmf</strong><br>
+<strong>Hypervisor ISA</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1.13</em><br>
+<strong>1.0.0</strong><br>
+<strong>1.0.0</strong><br>
+<strong>1.0.0</strong><br>
+<strong>1.0.0</strong><br>
+<strong>1.0.0</strong><br>
+<em>1.13</em><br>
+<strong>1.0.0</strong><br>
+<em>0.1</em><br>
+<strong>1.0</strong><br>
+<strong>1.0</strong><br>
+<strong>1.0</strong><br>
+<strong>1.0</strong><br>
+<strong>1.0</strong><br>
+<strong>1.0</strong><br>
+<strong>1.0</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><em>Draft</em><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<em>Draft</em><br>
+<strong>Ratified</strong><br>
+<em>Draft</em><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong><br>
+<strong>Ratified</strong></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-05-09 10:59:36 -0400
+Last updated 2024-05-09 11:18:54 -0400
 </div>
 </div>
 </body>
