@@ -2,8 +2,9 @@
 name: Glossary term
 about: Add a term to the RISC-V glossary
 title: Glossary term requested.
-labels: ""
-assignees: ""
+labels: ''
+assignees: ''
+
 ---
 
 **New term or update existing**
