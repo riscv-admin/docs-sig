@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest a tool or functionality that will help out documentation development.
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **Describe your idea.**
