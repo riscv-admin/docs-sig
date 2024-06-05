@@ -6,6 +6,9 @@ Demonstrate wavedrom input converted to other outputs (ex: table)
 
 ## Example
 
+example of including the Zabha register
+
+ifdef::non-norm[]
 .Zabha register
 [wavedrom, zabha-ext-wavedrom-reg, svg]
 ....
@@ -14,6 +17,7 @@ include::zabha-ext-reg-wavedrom.json5[]
 
 .Zabha register
 include::zabha-ext-reg-table.adoc[]
+end::non-norm[]
 
 
 ## Implementation details
