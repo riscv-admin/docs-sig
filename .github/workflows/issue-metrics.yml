@@ -32,7 +32,7 @@ jobs:
         uses: github/issue-metrics@v3
         env:
           GH_TOKEN: ${{ secrets.GHTOKEN }}
-          SEARCH_QUERY: 'repo:riscv-admin/doc-sig is:issue created:${{ env.last_month }} -reason:"not planned"'
+          SEARCH_QUERY: "repo:riscv-admin/doc-sig is:issue created:${{ env.last_month }}"
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v5
@@ -40,3 +40,4 @@ jobs:
           title: Monthly issue metrics report
           token: ${{ secrets.GHTOKEN }}
           content-filepath: ./issue_metrics.md
+          assignees: kbroch-rivosinc
