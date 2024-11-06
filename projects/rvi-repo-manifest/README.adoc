@@ -30,7 +30,7 @@ Similarly to cloning a single repo, the first step in using `repo` is to link:ht
 [source, bash]
 ----
 mkdir rvi-repos && cd rvi-repos
-repo init -u https://github.com/riscv-admin/docs-sig -m projects/rvi-repo-manifest/generated/all-rvi-orgs.xml -g all,-riscv-android-src
+repo init -u https://github.com/riscv-admin/docs-sig -g all,-riscv-android-src
 ----
 
 === Pros and cons
