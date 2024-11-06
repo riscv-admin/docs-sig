@@ -3,10 +3,10 @@
 <!-- https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md -->
 <manifest>
     <include name="_common.xml" />
+    <project name='riscv-software-src/riscv-isa-sim' revision='master' groups='riscv-software-src' />
     <project name='riscv-software-src/riscv-unified-db' revision='main' groups='riscv-software-src' />
     <project name='riscv-software-src/librpmi' revision='main' groups='riscv-software-src' />
     <project name='riscv-software-src/riscv-perf-model' revision='master' groups='riscv-software-src' />
-    <project name='riscv-software-src/riscv-isa-sim' revision='master' groups='riscv-software-src' />
     <project name='riscv-software-src/riscv-tests' revision='master' groups='riscv-software-src' />
     <project name='riscv-software-src/opensbi' revision='master' groups='riscv-software-src' />
     <project name='riscv-software-src/homebrew-riscv' revision='main' groups='riscv-software-src' />

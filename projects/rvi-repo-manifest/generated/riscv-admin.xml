@@ -3,6 +3,7 @@
 <!-- https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md -->
 <manifest>
     <include name="_common.xml" />
+    <project name='riscv-admin/docs-sig' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/riscv-landscape' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/composable-custom-extensions' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/help' revision='main' groups='riscv-admin' />
@@ -36,7 +37,6 @@
     <project name='riscv-admin/external-debug-security' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/template-docs-rtd' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/.github' revision='main' groups='riscv-admin' />
-    <project name='riscv-admin/docs-sig' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/app-tools-software' revision='master' groups='riscv-admin' />
     <project name='riscv-admin/riscv-brs' revision='main' groups='riscv-admin' />
     <project name='riscv-admin/riscv-memory-tagging' revision='main' groups='riscv-admin' />

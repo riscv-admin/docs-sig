@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<include name="riscv-collab.xml" />
-<include name="riscv-software-src.xml" />
-<include name="riscv.xml" />
-<include name="riscv-non-isa.xml" />
-<include name="riscv-admin.xml" />
-<include name="riscv-software-src.xml" />
-<include name="riscv-collab.xml" />
-<include name="riscv-android-src.xml" />
+    <include name="riscv.xml" />
+    <include name="riscv-admin.xml" />
+    <include name="riscv-android-src.xml" />
+    <include name="riscv-collab.xml" />
+    <include name="riscv-non-isa.xml" />
+    <include name="riscv-software-src.xml" />
+    <include name="riscv-collab.xml" />
 </manifest>

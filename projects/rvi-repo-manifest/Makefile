@@ -1,13 +1,12 @@
 
 ORGS := \
-        riscv-collab \
-		riscv-software-src \
 		riscv \
-		riscv-non-isa \
 		riscv-admin \
-		riscv-software-src \
+		riscv-android-src \
 		riscv-collab \
-		riscv-android-src
+		riscv-non-isa \
+		riscv-software-src \
+        riscv-collab
 
 TOOL := ./generate-manifests.sh
 BUILD_DIR := generated
