@@ -46,7 +46,7 @@ xml_header='<?xml version="1.0" encoding="UTF-8"?>
 echo "$xml_header" > "$output_file"
 
 # Loop through each organization
-for org in "${org_list[@]}"; do
+for org in ${org_list}; do
     echo "Fetching repositories for organization: $org"
 
     # Get list of repositories for the organization

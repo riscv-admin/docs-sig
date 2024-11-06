@@ -19,7 +19,7 @@ NOTE: `repo` has many features that won't be covered in here or even needed (lik
 
 === Usage
 
-=== Generating a manifest file
+==== Generating a manifest file
 
 Although manifest files can be created manually, a bash script is used here to do it automatically.
 
