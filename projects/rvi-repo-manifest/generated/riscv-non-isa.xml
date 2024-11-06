@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GENERATED FILE DO NOT EDIT -->
+<!-- https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md -->
+<manifest>
+    <include name="_common.xml" />
+    <project name='riscv-non-isa/riscv-acpi-rimt' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-arch-test' revision='dev' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-external-debug-security' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-trace-spec' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-sbi-doc' revision='master' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-brs' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-elf-psabi-doc' revision='master' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-rpmi' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/iopmp-spec' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/rvv-intrinsic-doc' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/server-soc' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-c-api-doc' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-acpi-ffh' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-iommu' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-semihosting' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-ap-tee' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-asm-manual' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/tg-nexus-trace' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-toolchain-conventions' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-server-platform' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-security-model' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-device-tree-doc' revision='master' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/e-trace-encap' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-ap-tee-io' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-cbqri' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-rqsc' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-ras-eri' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-iommu-invalidation' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/server-soc-ts' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-arch-test-reports' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-rvm-csi' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/.github' revision='master' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-acpi' revision='master' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-uefi' revision='main' groups='riscv-non-isa' />
+    <project name='riscv-non-isa/riscv-swi' revision='main' groups='riscv-non-isa' />
+</manifest>
