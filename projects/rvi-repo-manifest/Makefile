@@ -5,8 +5,7 @@ ORGS := \
 		riscv-android-src \
 		riscv-collab \
 		riscv-non-isa \
-		riscv-software-src \
-        riscv-collab
+		riscv-software-src
 
 TOOL := ./generate-manifests.sh
 BUILD_DIR := generated

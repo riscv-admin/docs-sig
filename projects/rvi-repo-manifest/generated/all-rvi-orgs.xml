@@ -341,9 +341,4 @@
     <project name='riscv-software-src/.github' revision='main' groups='riscv-software-src' />
     <project name='riscv-software-src/riscv-overlay' revision='master' groups='riscv-software-src' />
     <project name='riscv-software-src/riscv-angel' revision='release' groups='riscv-software-src' />
-    <project name='riscv-collab/riscv-gnu-toolchain' revision='master' groups='riscv-collab' />
-    <project name='riscv-collab/riscv-openocd' revision='riscv' groups='riscv-collab' />
-    <project name='riscv-collab/.github' revision='master' groups='riscv-collab' />
-    <project name='riscv-collab/riscv-openjdk' revision='riscv-port-branch' groups='riscv-collab' />
-    <project name='riscv-collab/kexec-tools' revision='master' groups='riscv-collab' />
 </manifest>
