@@ -25,13 +25,27 @@ Although manifest files can be created manually, a bash script is used here to d
 
 ==== Using git `repo` tool
 
+===== `repo init`
+
 Similarly to cloning a single repo, the first step in using `repo` is to link:https://source.android.com/docs/setup/reference/repo#init[initialize] a directory with the configuration (manifest file).  This should be done in an empty dir.
 
+There is only one `default.xml` manifest file that has been created.  It contains all the projects of all the orgs that RVI uses.  To filter down by organization or projects, use the `--groups=` feature of the `repo init` command.
+
+Here's an example:
 [source, bash]
 ----
 mkdir rvi-repos && cd rvi-repos
-repo init -u https://github.com/riscv-admin/docs-sig -g all,-riscv-android-src
+repo init -u https://github.com/riscv-admin/docs-sig --groups=all,-org:riscv-android-src
 ----
+
+NOTES:
+* If a `--manifest` isn't provided, `default.xml` is assumed
+* `--groups=all` is a special group to check out all
+* If a `-` is used in front of a group, negates its use
+
+==== `repo sync`
+
+After `repo init` is done once, `repo sync` can be used to clone the initial repos and keep them sync'ed with upstream in the future.
 
 === Pros and cons
 

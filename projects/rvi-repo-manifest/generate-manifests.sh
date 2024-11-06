@@ -41,7 +41,8 @@ xml_header='<?xml version="1.0" encoding="UTF-8"?>
 <!-- GENERATED FILE DO NOT EDIT -->
 <!-- https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md -->
 <manifest>
-    <include name="_common.xml" />'
+    <remote name="origin" fetch="ssh://git@github.com"/>
+    <default revision="refs/heads/main" remote="origin" sync-j="4"/>'
 
 echo "$xml_header" > "$output_file"
 
@@ -50,7 +51,7 @@ for org in $org_list; do
     echo "Fetching repositories for organization: $org"
 
     # Get list of repositories for the organization
-    repos=$(gh repo list -L $MAX_REPOS --no-archived --source $org --json name --jq '.[].name')
+    repos=$(gh repo list -L $MAX_REPOS --no-archived --source $org --json name --jq '.[].name' | sort)
 
     # Loop through each repository
     for repo in $repos; do
@@ -60,7 +61,7 @@ for org in $org_list; do
         default_branch=$(echo $repo_info | jq -r '.db')
 
         # Add repository information to the XML file
-        repo_entry="    <project name='$org/$repo' revision='$default_branch' groups='$org' />"
+        repo_entry="    <project name='$org/$repo' revision='$default_branch' groups='org:$org,proj:$repo' />"
         echo "$repo_entry" >> $output_file
     done
 done
