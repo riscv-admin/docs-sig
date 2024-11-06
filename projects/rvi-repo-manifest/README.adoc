@@ -1,0 +1,52 @@
+= RVI repos manifest
+
+RVI has many link:https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154706/GitHub+Repo+Map[github org's] with many repositories that represent the work being done.  There are tools that make it easier to work with multiple repos.  This POC provides one example.
+
+== Details
+
+This POC show how to do the following:
+
+* use github CLI tool `gh` and `jq` to generate a manifest (XML listing of multiple repos)
+* use link:https://gerrit.googlesource.com/git-repo/[git `repo` tool] to work with the repos in that manifest
+
+NOTE: `repo` has many features that won't be covered in here or even needed (like `upload`ing changeset to gerrit server)
+
+=== Prerequisites
+
+* install and configure (authorize) link:https://cli.github.com/[`gh`]
+* install link:https://jqlang.github.io/jq/[`jq`]
+* Install link:https://gerrit.googlesource.com/git-repo/#install[git `repo` tool]
+
+=== Usage
+
+=== Generating a manifest file
+
+Although manifest files can be created manually, a bash script is used here to do it automatically.
+
+==== Using git `repo` tool
+
+Similarly to cloning a single repo, the first step in using `repo` is to link:https://source.android.com/docs/setup/reference/repo#init[initialize] a directory with the configuration (manifest file).  This should be done in an empty dir.
+
+[source, bash]
+----
+mkdir rvi-repos && cd rvi-repos
+repo init -u https://github.com/riscv-admin/docs-sig -m projects/rvi-repo-manifest/generated/all-rvi-orgs.xml -g all,-riscv-android-src
+----
+
+=== Pros and cons
+
+* Pros
+** perform git commands on multiple repos at the same time
+* Cons
+** manifests manually generated so additions or deletions of repos aren't automatic
+*** deletions especially will generate a `repo rsync` failure for that given repo
+
+== References
+
+List of multi-repo tools:
+
+* https://gerrit.googlesource.com/git-repo/
+* https://manicli.com/
+* https://github.com/nosarthur/gita
+* https://github.com/fabioz/mu-repo
+* https://github.com/asottile/all-repos
