@@ -16,16 +16,14 @@ ORGS_XML := $(addsuffix .xml, $(ORGS))
 
 .PHONY: build-xml build-all-rvi-orgs-xml
 
-default: build-all-rvi-orgs-xml
+default: build-xml $(ALL_ORGS_XML)
 
 build-xml:
 	$(MAKE) $(ORGS_XML)
 
-build-all-rvi-orgs-xml: build-xml
-	@echo '<?xml version="1.0" encoding="UTF-8"?>' > $(BUILD_DIR)/$(ALL_ORGS_XML)
-	@echo '<manifest>' >> $(BUILD_DIR)/$(ALL_ORGS_XML)
-	@for item in $(ORGS_XML); do echo "    <include name=\"$$item\" />" >> $(BUILD_DIR)/$(ALL_ORGS_XML); done
-	@echo '</manifest>' >> $(BUILD_DIR)/$(ALL_ORGS_XML)
+all-orgs-xml:
+	$(TOOL) $(BUILD_DIR)/$(ALL_ORGS_XML) $(ORGS)
+	cp _common.xml $(BUILD_DIR)/.
 
 %.xml:
 	$(TOOL) $(BUILD_DIR)/$@ $*
