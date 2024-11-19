@@ -1,35 +1,33 @@
 = RVI repos manifest
 
-RVI has many link:https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154706/GitHub+Repo+Map[github org's] with many repositories that represent the work being done.  There are tools that make it easier to work with multiple repos.  This POC provides one example.
+RVI has many link:https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154706/GitHub+Repo+Map[github org's] with many repositories that represent the work being done.  There are tools that make it easier to work with multiple repos.  This proof of concept (POC) provides one example.
 
 == Details
 
-This POC show how to do the following:
+This will show how to do the following tasks across the "dev" and "user" roles:
 
-* use github CLI tool `gh` and `jq` to generate a manifest (XML listing of multiple repos)
-* use link:https://gerrit.googlesource.com/git-repo/[git `repo` tool] to work with the repos in that manifest
+* dev
+** use github CLI tool `gh` and `jq` to generate a manifest (XML listing of multiple repos)
+* user
+** use link:https://gerrit.googlesource.com/git-repo/[git `repo` tool] to work with the repos in that manifest
 
 NOTE: `repo` has many features that won't be covered in here or even needed (like `upload`ing changeset to gerrit server)
 
 === Prerequisites
 
-* install and configure (authorize) link:https://cli.github.com/[`gh`]
-* install link:https://jqlang.github.io/jq/[`jq`]
-* Install link:https://gerrit.googlesource.com/git-repo/#install[git `repo` tool]
+* dev
+** install and configure (authorize) link:https://cli.github.com/[`gh`]
+** install link:https://jqlang.github.io/jq/[`jq`]
+* user
+** Install link:https://gerrit.googlesource.com/git-repo/#install[git `repo` tool]
 
-=== Usage
+=== Using manifest files
 
-=== Generating a manifest file
-
-Although manifest files can be created manually, a bash script is used here to do it automatically.
-
-==== Using git `repo` tool
-
-===== `repo init`
+===== Initialize repos with `repo init`
 
 Similarly to cloning a single repo, the first step in using `repo` is to link:https://source.android.com/docs/setup/reference/repo#init[initialize] a directory with the configuration (manifest file).  This should be done in an empty dir.
 
-There is only one `default.xml` manifest file that has been created.  It contains all the projects of all the orgs that RVI uses.  To filter down by organization or projects, use the `--groups=` feature of the `repo init` command.
+There currently is only one `default.xml` manifest file that has been created.  It contains all the projects of all the orgs that RVI uses.  To filter down by organization or projects, use the `--groups=` feature of the `repo init` command.
 
 Here's an example:
 [source, bash]
@@ -38,22 +36,47 @@ mkdir rvi-repos && cd rvi-repos
 repo init -u https://github.com/riscv-admin/docs-sig --groups=all,-org:riscv-android-src
 ----
 
-NOTES:
-* If a `--manifest` isn't provided, `default.xml` is assumed
-* `--groups=all` is a special group to check out all
-* If a `-` is used in front of a group, negates its use
+NOTE: If a `--manifest` isn't provided, `default.xml` is assumed
 
-==== `repo sync`
+NOTE: `--groups=all` is a special group to check out all
 
-After `repo init` is done once, `repo sync` can be used to clone the initial repos and keep them sync'ed with upstream in the future.
+NOTE: If a `-` is used in front of a group, negates its use
+
+==== Clone/pull repos content with `repo sync`
+
+After `repo init` is done once, `repo sync` can be used to clone the initial repos and keep them sync'ed with their remotes in the future.
+
+NOTE: All `git` commands will continue to work in the individual projects as expected.
+
+=== Dev tasks
+
+==== Generating a manifest file
+
+Although manifest files can be created manually, a bash script is used here to do it automatically.
+
+Simple run `make`
+
+.Example output:
+[source,shell]
+----
+❯ make
+./generate-manifests.sh generated/default.xml riscv riscv-admin riscv-android-src riscv-collab riscv-non-isa riscv-software-src
+Fetching repositories for organization: riscv
+Fetching repositories for organization: riscv-admin
+Fetching repositories for organization: riscv-android-src
+Fetching repositories for organization: riscv-collab
+Fetching repositories for organization: riscv-non-isa
+Fetching repositories for organization: riscv-software-src
+XML manifest generated: generated/default.xml
+----
 
 === Pros and cons
 
 * Pros
 ** perform git commands on multiple repos at the same time
 * Cons
-** manifests manually generated so additions or deletions of repos aren't automatic
-*** deletions especially will generate a `repo rsync` failure for that given repo
+** generated manifests are currently generated manually so changes to all the RVI repos won't be picked up automatically
+*** deletions especially will generate a `repo rsync` failure for that given repo (but not fatal for the tool)
 
 == References
 

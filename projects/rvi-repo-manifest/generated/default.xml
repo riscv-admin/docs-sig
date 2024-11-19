@@ -11,6 +11,7 @@
     <project name='riscv/docs-resources' revision='main' groups='org:riscv,proj:docs-resources' />
     <project name='riscv/docs-spec-template' revision='main' groups='org:riscv,proj:docs-spec-template' />
     <project name='riscv/friendly-terminology' revision='main' groups='org:riscv,proj:friendly-terminology' />
+    <project name='riscv/guides' revision='main' groups='org:riscv,proj:guides' />
     <project name='riscv/learn' revision='main' groups='org:riscv,proj:learn' />
     <project name='riscv/lightweight-isolation' revision='main' groups='org:riscv,proj:lightweight-isolation' />
     <project name='riscv/meta-riscv' revision='master' groups='org:riscv,proj:meta-riscv' />
