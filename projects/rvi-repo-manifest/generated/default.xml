@@ -35,6 +35,7 @@
     <project name='riscv/riscv-hac' revision='main' groups='org:riscv,proj:riscv-hac' />
     <project name='riscv/riscv-isa-manual' revision='main' groups='org:riscv,proj:riscv-isa-manual' />
     <project name='riscv/riscv-j-extension' revision='master' groups='org:riscv,proj:riscv-j-extension' />
+    <project name='riscv/riscv-library' revision='main' groups='org:riscv,proj:riscv-library' />
     <project name='riscv/riscv-memory-tagging' revision='main' groups='org:riscv,proj:riscv-memory-tagging' />
     <project name='riscv/riscv-opcodes' revision='master' groups='org:riscv,proj:riscv-opcodes' />
     <project name='riscv/riscv-p-spec' revision='master' groups='org:riscv,proj:riscv-p-spec' />
@@ -68,6 +69,7 @@
     <project name='riscv-admin/architecture-test' revision='master' groups='org:riscv-admin,proj:architecture-test' />
     <project name='riscv-admin/attached-matrix-extension' revision='main' groups='org:riscv-admin,proj:attached-matrix-extension' />
     <project name='riscv-admin/bod-report' revision='main' groups='org:riscv-admin,proj:bod-report' />
+    <project name='riscv-admin/call-for-candidates' revision='' groups='org:riscv-admin,proj:call-for-candidates' />
     <project name='riscv-admin/cheri-sig' revision='main' groups='org:riscv-admin,proj:cheri-sig' />
     <project name='riscv-admin/cheri-tg' revision='main' groups='org:riscv-admin,proj:cheri-tg' />
     <project name='riscv-admin/committee-code-of-conduct' revision='main' groups='org:riscv-admin,proj:committee-code-of-conduct' />
