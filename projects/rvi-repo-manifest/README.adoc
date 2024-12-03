@@ -48,6 +48,25 @@ After `repo init` is done once, `repo sync` can be used to clone the initial rep
 
 NOTE: All `git` commands will continue to work in the individual projects as expected.
 
+==== Cherry-pick edits across multiple repos (or how to use `repo foreach` to do work across multiple repos)
+
+The goal of the example is to cherry-pick a commit from another repo and apply it to other repos using link:https://source.android.com/docs/setup/reference/repo#forall[`repo forall`]
+
+NOTE: This example only shows doing it for one repo but the changes could be more broadly applied.
+
+* create a dev branch:
+** `repo start dev/kbroch/dependabot-update-docs-resources-submodule riscv/riscv-isa-manual`
+* add remote that contains commit you want to cherry-pick:
+** `repo forall riscv/riscv-isa-manual -v -c 'echo $REPO_PROJECT; git remote add docs-spec-template git@github.com:riscv/docs-spec-template.git'`
+* fetch the remote above:
+** `repo forall riscv/riscv-isa-manual -v -c 'echo $REPO_PROJECT; git fetch docs-spec-template'`
+* cherry-pick the commit wanted:
+** `repo forall riscv/riscv-isa-manual -v -c 'echo $REPO_PROJECT; git cherry-pick 5c19f62e25aeeda69886b07e7ec2959b1e632735'`
+* push changes:
+** `repo forall riscv/riscv-isa-manual -v -c 'echo $REPO_PROJECT; git push origin HEAD'`
+
+NOTE: At this point, PRs need to be created individually.
+
 === Dev tasks
 
 ==== Generating a manifest file
