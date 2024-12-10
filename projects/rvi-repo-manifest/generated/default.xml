@@ -69,13 +69,11 @@
     <project name='riscv-admin/architecture-test' revision='master' groups='org:riscv-admin,proj:architecture-test' />
     <project name='riscv-admin/attached-matrix-extension' revision='main' groups='org:riscv-admin,proj:attached-matrix-extension' />
     <project name='riscv-admin/bod-report' revision='main' groups='org:riscv-admin,proj:bod-report' />
-    <project name='riscv-admin/call-for-candidates' revision='' groups='org:riscv-admin,proj:call-for-candidates' />
     <project name='riscv-admin/cheri-sig' revision='main' groups='org:riscv-admin,proj:cheri-sig' />
     <project name='riscv-admin/cheri-tg' revision='main' groups='org:riscv-admin,proj:cheri-tg' />
     <project name='riscv-admin/committee-code-of-conduct' revision='main' groups='org:riscv-admin,proj:committee-code-of-conduct' />
     <project name='riscv-admin/composable-custom-extensions' revision='main' groups='org:riscv-admin,proj:composable-custom-extensions' />
     <project name='riscv-admin/control-flow-integrity' revision='main' groups='org:riscv-admin,proj:control-flow-integrity' />
-    <project name='riscv-admin/control-transfer-records' revision='main' groups='org:riscv-admin,proj:control-transfer-records' />
     <project name='riscv-admin/datacenter' revision='main' groups='org:riscv-admin,proj:datacenter' />
     <project name='riscv-admin/debug' revision='main' groups='org:riscv-admin,proj:debug' />
     <project name='riscv-admin/debug-trace-perf-mon' revision='main' groups='org:riscv-admin,proj:debug-trace-perf-mon' />
