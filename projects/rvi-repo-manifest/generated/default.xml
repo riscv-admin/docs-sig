@@ -304,7 +304,6 @@
     <project name='riscv-non-isa/riscv-elf-psabi-doc' revision='master' groups='org:riscv-non-isa,proj:riscv-elf-psabi-doc' />
     <project name='riscv-non-isa/riscv-external-debug-security' revision='main' groups='org:riscv-non-isa,proj:riscv-external-debug-security' />
     <project name='riscv-non-isa/riscv-iommu' revision='main' groups='org:riscv-non-isa,proj:riscv-iommu' />
-    <project name='riscv-non-isa/riscv-iommu-invalidation' revision='main' groups='org:riscv-non-isa,proj:riscv-iommu-invalidation' />
     <project name='riscv-non-isa/riscv-ras-eri' revision='main' groups='org:riscv-non-isa,proj:riscv-ras-eri' />
     <project name='riscv-non-isa/riscv-rpmi' revision='main' groups='org:riscv-non-isa,proj:riscv-rpmi' />
     <project name='riscv-non-isa/riscv-rqsc' revision='main' groups='org:riscv-non-isa,proj:riscv-rqsc' />
