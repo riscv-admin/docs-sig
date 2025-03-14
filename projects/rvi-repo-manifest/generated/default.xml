@@ -15,7 +15,6 @@
     <project name='riscv/learn' revision='main' groups='org:riscv,proj:learn' />
     <project name='riscv/meta-riscv' revision='master' groups='org:riscv,proj:meta-riscv' />
     <project name='riscv/riscv-CMOs' revision='master' groups='org:riscv,proj:riscv-CMOs' />
-    <project name='riscv/riscv-aclint' revision='main' groups='org:riscv,proj:riscv-aclint' />
     <project name='riscv/riscv-aia' revision='main' groups='org:riscv,proj:riscv-aia' />
     <project name='riscv/riscv-attached-matrix-facility' revision='main' groups='org:riscv,proj:riscv-attached-matrix-facility' />
     <project name='riscv/riscv-b' revision='main' groups='org:riscv,proj:riscv-b' />
@@ -288,7 +287,6 @@
     <project name='riscv-non-isa/e-trace-encap' revision='main' groups='org:riscv-non-isa,proj:e-trace-encap' />
     <project name='riscv-non-isa/hart-trace-interface' revision='main' groups='org:riscv-non-isa,proj:hart-trace-interface' />
     <project name='riscv-non-isa/iopmp-spec' revision='main' groups='org:riscv-non-isa,proj:iopmp-spec' />
-    <project name='riscv-non-isa/riscv-acpi' revision='master' groups='org:riscv-non-isa,proj:riscv-acpi' />
     <project name='riscv-non-isa/riscv-acpi-ffh' revision='main' groups='org:riscv-non-isa,proj:riscv-acpi-ffh' />
     <project name='riscv-non-isa/riscv-acpi-rimt' revision='main' groups='org:riscv-non-isa,proj:riscv-acpi-rimt' />
     <project name='riscv-non-isa/riscv-ap-tee' revision='main' groups='org:riscv-non-isa,proj:riscv-ap-tee' />
