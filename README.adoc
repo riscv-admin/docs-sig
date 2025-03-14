@@ -9,4 +9,4 @@ For complex tasks, a projects dir contains more information.
 
 == Details
 
-* the git repo tool manifest POC project needs it's xml files at the top level of a git repo so that's why they are cluttering up things.
+* link:projects/rvi-repo-manifest/README.adoc[rvi-repo-manifest project] needs the link:default.xml[] at the top level to work
