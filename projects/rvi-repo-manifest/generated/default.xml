@@ -12,9 +12,10 @@
     <project name='riscv/docs-spec-template' revision='main' groups='org:riscv,proj:docs-spec-template' />
     <project name='riscv/friendly-terminology' revision='main' groups='org:riscv,proj:friendly-terminology' />
     <project name='riscv/guides' revision='main' groups='org:riscv,proj:guides' />
+    <project name='riscv/kersten-ui' revision='main' groups='org:riscv,proj:kersten-ui' />
+    <project name='riscv/kersten2' revision='main' groups='org:riscv,proj:kersten2' />
     <project name='riscv/learn' revision='main' groups='org:riscv,proj:learn' />
     <project name='riscv/meta-riscv' revision='master' groups='org:riscv,proj:meta-riscv' />
-    <project name='riscv/riscv-CMOs' revision='master' groups='org:riscv,proj:riscv-CMOs' />
     <project name='riscv/riscv-aia' revision='main' groups='org:riscv,proj:riscv-aia' />
     <project name='riscv/riscv-attached-matrix-facility' revision='main' groups='org:riscv,proj:riscv-attached-matrix-facility' />
     <project name='riscv/riscv-b' revision='main' groups='org:riscv,proj:riscv-b' />
@@ -22,15 +23,15 @@
     <project name='riscv/riscv-bitmanip' revision='main' groups='org:riscv,proj:riscv-bitmanip' />
     <project name='riscv/riscv-cfi' revision='main' groups='org:riscv,proj:riscv-cfi' />
     <project name='riscv/riscv-cheri' revision='main' groups='org:riscv,proj:riscv-cheri' />
+    <project name='riscv/riscv-CMOs' revision='master' groups='org:riscv,proj:riscv-CMOs' />
     <project name='riscv/riscv-control-transfer-records' revision='main' groups='org:riscv,proj:riscv-control-transfer-records' />
     <project name='riscv/riscv-crypto' revision='main' groups='org:riscv,proj:riscv-crypto' />
-    <project name='riscv/riscv-debug-spec' revision='main' groups='org:riscv,proj:riscv-debug-spec' />
     <project name='riscv/riscv-docs-base-container-image' revision='main' groups='org:riscv,proj:riscv-docs-base-container-image' />
     <project name='riscv/riscv-dot-product' revision='main' groups='org:riscv,proj:riscv-dot-product' />
     <project name='riscv/riscv-double-trap' revision='main' groups='org:riscv,proj:riscv-double-trap' />
     <project name='riscv/riscv-fast-interrupt' revision='master' groups='org:riscv,proj:riscv-fast-interrupt' />
     <project name='riscv/riscv-glossary' revision='main' groups='org:riscv,proj:riscv-glossary' />
-    <project name='riscv/riscv-hac' revision='main' groups='org:riscv,proj:riscv-hac' />
+    <project name='riscv/riscv-high-assurance-cryptography' revision='main' groups='org:riscv,proj:riscv-high-assurance-cryptography' />
     <project name='riscv/riscv-isa-manual' revision='main' groups='org:riscv,proj:riscv-isa-manual' />
     <project name='riscv/riscv-j-extension' revision='master' groups='org:riscv,proj:riscv-j-extension' />
     <project name='riscv/riscv-library' revision='main' groups='org:riscv,proj:riscv-library' />
@@ -88,10 +89,10 @@
     <project name='riscv-admin/hypervisors' revision='main' groups='org:riscv-admin,proj:hypervisors' />
     <project name='riscv-admin/integrated-matrix-extension' revision='main' groups='org:riscv-admin,proj:integrated-matrix-extension' />
     <project name='riscv-admin/iopmp' revision='main' groups='org:riscv-admin,proj:iopmp' />
-    <project name='riscv-admin/isa-infra' revision='main' groups='org:riscv-admin,proj:isa-infra' />
     <project name='riscv-admin/isa-infrastructure' revision='main' groups='org:riscv-admin,proj:isa-infrastructure' />
     <project name='riscv-admin/jira-to-google' revision='main' groups='org:riscv-admin,proj:jira-to-google' />
     <project name='riscv-admin/labs-doc' revision='main' groups='org:riscv-admin,proj:labs-doc' />
+    <project name='riscv-admin/local-llm-meeting-summary' revision='main' groups='org:riscv-admin,proj:local-llm-meeting-summary' />
     <project name='riscv-admin/m-mode-isolation' revision='main' groups='org:riscv-admin,proj:m-mode-isolation' />
     <project name='riscv-admin/marketing' revision='main' groups='org:riscv-admin,proj:marketing' />
     <project name='riscv-admin/members-report' revision='main' groups='org:riscv-admin,proj:members-report' />
@@ -102,8 +103,6 @@
     <project name='riscv-admin/performance-events' revision='main' groups='org:riscv-admin,proj:performance-events' />
     <project name='riscv-admin/policies' revision='main' groups='org:riscv-admin,proj:policies' />
     <project name='riscv-admin/post-quantum-cryptography' revision='main' groups='org:riscv-admin,proj:post-quantum-cryptography' />
-    <project name='riscv-admin/priv-isa' revision='main' groups='org:riscv-admin,proj:priv-isa' />
-    <project name='riscv-admin/privileged-software' revision='main' groups='org:riscv-admin,proj:privileged-software' />
     <project name='riscv-admin/profiles-sig' revision='main' groups='org:riscv-admin,proj:profiles-sig' />
     <project name='riscv-admin/prs' revision='main' groups='org:riscv-admin,proj:prs' />
     <project name='riscv-admin/psabi' revision='master' groups='org:riscv-admin,proj:psabi' />
@@ -118,24 +117,24 @@
     <project name='riscv-admin/riscv-scalar-efficiency' revision='main' groups='org:riscv-admin,proj:riscv-scalar-efficiency' />
     <project name='riscv-admin/riscv-srt' revision='main' groups='org:riscv-admin,proj:riscv-srt' />
     <project name='riscv-admin/riscv-tech-calendar' revision='main' groups='org:riscv-admin,proj:riscv-tech-calendar' />
+    <project name='riscv-admin/riscv-tech-newsletter-form' revision='main' groups='org:riscv-admin,proj:riscv-tech-newsletter-form' />
     <project name='riscv-admin/riscv-tech-org' revision='main' groups='org:riscv-admin,proj:riscv-tech-org' />
     <project name='riscv-admin/riscv-tech-staff-tasks' revision='main' groups='org:riscv-admin,proj:riscv-tech-staff-tasks' />
     <project name='riscv-admin/riscv-technology-hc' revision='master' groups='org:riscv-admin,proj:riscv-technology-hc' />
     <project name='riscv-admin/riscv-toolchains-runtimes' revision='master' groups='org:riscv-admin,proj:riscv-toolchains-runtimes' />
+    <project name='riscv-admin/riscv-tsc-priorities' revision='main' groups='org:riscv-admin,proj:riscv-tsc-priorities' />
+    <project name='riscv-admin/riscv-tsc-priorities-strategic' revision='main' groups='org:riscv-admin,proj:riscv-tsc-priorities-strategic' />
     <project name='riscv-admin/riscv-uefi-edk2-docs' revision='master' groups='org:riscv-admin,proj:riscv-uefi-edk2-docs' />
     <project name='riscv-admin/riscv-vale' revision='main' groups='org:riscv-admin,proj:riscv-vale' />
     <project name='riscv-admin/rpmi' revision='main' groups='org:riscv-admin,proj:rpmi' />
     <project name='riscv-admin/runtime-integrity' revision='main' groups='org:riscv-admin,proj:runtime-integrity' />
-    <project name='riscv-admin/rvv-intrinsics' revision='main' groups='org:riscv-admin,proj:rvv-intrinsics' />
     <project name='riscv-admin/sail-simulators-ci' revision='main' groups='org:riscv-admin,proj:sail-simulators-ci' />
-    <project name='riscv-admin/security' revision='main' groups='org:riscv-admin,proj:security' />
     <project name='riscv-admin/security-model' revision='main' groups='org:riscv-admin,proj:security-model' />
     <project name='riscv-admin/server-platform' revision='main' groups='org:riscv-admin,proj:server-platform' />
     <project name='riscv-admin/server-soc' revision='main' groups='org:riscv-admin,proj:server-soc' />
     <project name='riscv-admin/sig-high-performance-io' revision='main' groups='org:riscv-admin,proj:sig-high-performance-io' />
     <project name='riscv-admin/sig-soft-cpu' revision='main' groups='org:riscv-admin,proj:sig-soft-cpu' />
     <project name='riscv-admin/smmtt' revision='main' groups='org:riscv-admin,proj:smmtt' />
-    <project name='riscv-admin/soc-infra' revision='main' groups='org:riscv-admin,proj:soc-infra' />
     <project name='riscv-admin/software' revision='main' groups='org:riscv-admin,proj:software' />
     <project name='riscv-admin/spec-plan-editor' revision='main' groups='org:riscv-admin,proj:spec-plan-editor' />
     <project name='riscv-admin/spmp' revision='main' groups='org:riscv-admin,proj:spmp' />
@@ -146,7 +145,6 @@
     <project name='riscv-admin/timing-fences' revision='main' groups='org:riscv-admin,proj:timing-fences' />
     <project name='riscv-admin/trusted-computing' revision='main' groups='org:riscv-admin,proj:trusted-computing' />
     <project name='riscv-admin/unified-discovery' revision='main' groups='org:riscv-admin,proj:unified-discovery' />
-    <project name='riscv-admin/unpriv-isa' revision='main' groups='org:riscv-admin,proj:unpriv-isa' />
     <project name='riscv-admin/vector' revision='main' groups='org:riscv-admin,proj:vector' />
     <project name='riscv-android-src/.github' revision='master' groups='org:riscv-android-src,proj:.github' />
     <project name='riscv-android-src/android-ndk-r20' revision='' groups='org:riscv-android-src,proj:android-ndk-r20' />
@@ -222,9 +220,9 @@
     <project name='riscv-android-src/platform-packages-apps-Bluetooth' revision='master' groups='org:riscv-android-src,proj:platform-packages-apps-Bluetooth' />
     <project name='riscv-android-src/platform-packages-apps-Camera2' revision='master' groups='org:riscv-android-src,proj:platform-packages-apps-Camera2' />
     <project name='riscv-android-src/platform-packages-modules-ArtPrebuilt' revision='riscv64-android-12.0.0_dev' groups='org:riscv-android-src,proj:platform-packages-modules-ArtPrebuilt' />
+    <project name='riscv-android-src/platform-packages-modules-common' revision='master' groups='org:riscv-android-src,proj:platform-packages-modules-common' />
     <project name='riscv-android-src/platform-packages-modules-DnsResolver' revision='master' groups='org:riscv-android-src,proj:platform-packages-modules-DnsResolver' />
     <project name='riscv-android-src/platform-packages-modules-NeuralNetworks' revision='master' groups='org:riscv-android-src,proj:platform-packages-modules-NeuralNetworks' />
-    <project name='riscv-android-src/platform-packages-modules-common' revision='master' groups='org:riscv-android-src,proj:platform-packages-modules-common' />
     <project name='riscv-android-src/platform-packages-services-Car' revision='riscv64-android-12.0.0_dev' groups='org:riscv-android-src,proj:platform-packages-services-Car' />
     <project name='riscv-android-src/platform-platform_testing' revision='master' groups='org:riscv-android-src,proj:platform-platform_testing' />
     <project name='riscv-android-src/platform-prebuilts-abi-dumps-ndk' revision='riscv64-android-12.0.0_dev' groups='org:riscv-android-src,proj:platform-prebuilts-abi-dumps-ndk' />
@@ -273,8 +271,8 @@
     <project name='riscv-android-src/riscv-android' revision='main' groups='org:riscv-android-src,proj:riscv-android' />
     <project name='riscv-android-src/riscv-android-tools' revision='' groups='org:riscv-android-src,proj:riscv-android-tools' />
     <project name='riscv-android-src/toolchain-android_rust' revision='master' groups='org:riscv-android-src,proj:toolchain-android_rust' />
-    <project name='riscv-android-src/toolchain-llvm-project' revision='master' groups='org:riscv-android-src,proj:toolchain-llvm-project' />
     <project name='riscv-android-src/toolchain-llvm_android' revision='llvm-r316199' groups='org:riscv-android-src,proj:toolchain-llvm_android' />
+    <project name='riscv-android-src/toolchain-llvm-project' revision='master' groups='org:riscv-android-src,proj:toolchain-llvm-project' />
     <project name='riscv-android-src/toolchain-prebuilts-ndk-r20' revision='master' groups='org:riscv-android-src,proj:toolchain-prebuilts-ndk-r20' />
     <project name='riscv-android-src/toolchain-prebuilts-ndk-r23' revision='master' groups='org:riscv-android-src,proj:toolchain-prebuilts-ndk-r23' />
     <project name='riscv-android-src/toolchain-rustc' revision='master' groups='org:riscv-android-src,proj:toolchain-rustc' />
