@@ -10,9 +10,9 @@
     <project name='riscv/docs-dev-guide' revision='main' groups='org:riscv,proj:docs-dev-guide' />
     <project name='riscv/docs-resources' revision='main' groups='org:riscv,proj:docs-resources' />
     <project name='riscv/docs-spec-template' revision='main' groups='org:riscv,proj:docs-spec-template' />
+    <project name='riscv/docs.riscv.org' revision='main' groups='org:riscv,proj:docs.riscv.org' />
     <project name='riscv/friendly-terminology' revision='main' groups='org:riscv,proj:friendly-terminology' />
     <project name='riscv/guides' revision='main' groups='org:riscv,proj:guides' />
-    <project name='riscv/kersten-ui' revision='main' groups='org:riscv,proj:kersten-ui' />
     <project name='riscv/kersten2' revision='main' groups='org:riscv,proj:kersten2' />
     <project name='riscv/learn' revision='main' groups='org:riscv,proj:learn' />
     <project name='riscv/meta-riscv' revision='master' groups='org:riscv,proj:meta-riscv' />
@@ -23,9 +23,9 @@
     <project name='riscv/riscv-bitmanip' revision='main' groups='org:riscv,proj:riscv-bitmanip' />
     <project name='riscv/riscv-cfi' revision='main' groups='org:riscv,proj:riscv-cfi' />
     <project name='riscv/riscv-cheri' revision='main' groups='org:riscv,proj:riscv-cheri' />
-    <project name='riscv/riscv-CMOs' revision='master' groups='org:riscv,proj:riscv-CMOs' />
     <project name='riscv/riscv-control-transfer-records' revision='main' groups='org:riscv,proj:riscv-control-transfer-records' />
     <project name='riscv/riscv-crypto' revision='main' groups='org:riscv,proj:riscv-crypto' />
+    <project name='riscv/riscv-debug-spec' revision='main' groups='org:riscv,proj:riscv-debug-spec' />
     <project name='riscv/riscv-docs-base-container-image' revision='main' groups='org:riscv,proj:riscv-docs-base-container-image' />
     <project name='riscv/riscv-dot-product' revision='main' groups='org:riscv,proj:riscv-dot-product' />
     <project name='riscv/riscv-double-trap' revision='main' groups='org:riscv,proj:riscv-double-trap' />
@@ -77,7 +77,6 @@
     <project name='riscv-admin/debug-trace-perf-mon' revision='main' groups='org:riscv-admin,proj:debug-trace-perf-mon' />
     <project name='riscv-admin/dev-partners' revision='main' groups='org:riscv-admin,proj:dev-partners' />
     <project name='riscv-admin/docs-sig' revision='main' groups='org:riscv-admin,proj:docs-sig' />
-    <project name='riscv-admin/docs.riscv.org' revision='main' groups='org:riscv-admin,proj:docs.riscv.org' />
     <project name='riscv-admin/ecosystem' revision='main' groups='org:riscv-admin,proj:ecosystem' />
     <project name='riscv-admin/exchange' revision='main' groups='org:riscv-admin,proj:exchange' />
     <project name='riscv-admin/external-debug-security' revision='main' groups='org:riscv-admin,proj:external-debug-security' />
@@ -106,12 +105,17 @@
     <project name='riscv-admin/profiles-sig' revision='main' groups='org:riscv-admin,proj:profiles-sig' />
     <project name='riscv-admin/prs' revision='main' groups='org:riscv-admin,proj:prs' />
     <project name='riscv-admin/psabi' revision='master' groups='org:riscv-admin,proj:psabi' />
+    <project name='riscv-admin/riscv-antora-ui' revision='main' groups='org:riscv-admin,proj:riscv-antora-ui' />
+    <project name='riscv-admin/riscv-antoranav' revision='main' groups='org:riscv-admin,proj:riscv-antoranav' />
     <project name='riscv-admin/riscv-arc' revision='main' groups='org:riscv-admin,proj:riscv-arc' />
     <project name='riscv-admin/riscv-brs' revision='main' groups='org:riscv-admin,proj:riscv-brs' />
     <project name='riscv-admin/riscv-ecosystem-dashboard' revision='main' groups='org:riscv-admin,proj:riscv-ecosystem-dashboard' />
-    <project name='riscv-admin/riscv-getting-started-guide' revision='main' groups='org:riscv-admin,proj:riscv-getting-started-guide' />
+    <project name='riscv-admin/riscv-github' revision='main' groups='org:riscv-admin,proj:riscv-github' />
+    <project name='riscv-admin/riscv-groupsio' revision='main' groups='org:riscv-admin,proj:riscv-groupsio' />
     <project name='riscv-admin/riscv-landscape' revision='main' groups='org:riscv-admin,proj:riscv-landscape' />
+    <project name='riscv-admin/riscv-meeting-attendance' revision='main' groups='org:riscv-admin,proj:riscv-meeting-attendance' />
     <project name='riscv-admin/riscv-memory-tagging' revision='main' groups='org:riscv-admin,proj:riscv-memory-tagging' />
+    <project name='riscv-admin/riscv-mirrors' revision='main' groups='org:riscv-admin,proj:riscv-mirrors' />
     <project name='riscv-admin/riscv-performance-event-sampling' revision='main' groups='org:riscv-admin,proj:riscv-performance-event-sampling' />
     <project name='riscv-admin/riscv-safety' revision='main' groups='org:riscv-admin,proj:riscv-safety' />
     <project name='riscv-admin/riscv-scalar-efficiency' revision='main' groups='org:riscv-admin,proj:riscv-scalar-efficiency' />
@@ -136,8 +140,11 @@
     <project name='riscv-admin/sig-soft-cpu' revision='main' groups='org:riscv-admin,proj:sig-soft-cpu' />
     <project name='riscv-admin/smmtt' revision='main' groups='org:riscv-admin,proj:smmtt' />
     <project name='riscv-admin/software' revision='main' groups='org:riscv-admin,proj:software' />
+    <project name='riscv-admin/spaces-report' revision='main' groups='org:riscv-admin,proj:spaces-report' />
     <project name='riscv-admin/spec-plan-editor' revision='main' groups='org:riscv-admin,proj:spec-plan-editor' />
+    <project name='riscv-admin/spec-report' revision='main' groups='org:riscv-admin,proj:spec-report' />
     <project name='riscv-admin/spmp' revision='main' groups='org:riscv-admin,proj:spmp' />
+    <project name='riscv-admin/tc-report' revision='main' groups='org:riscv-admin,proj:tc-report' />
     <project name='riscv-admin/tech-groupsio-membership' revision='main' groups='org:riscv-admin,proj:tech-groupsio-membership' />
     <project name='riscv-admin/tech-newsletter' revision='main' groups='org:riscv-admin,proj:tech-newsletter' />
     <project name='riscv-admin/template-docs-rtd' revision='main' groups='org:riscv-admin,proj:template-docs-rtd' />
@@ -297,6 +304,7 @@
     <project name='riscv-non-isa/riscv-cbqri' revision='main' groups='org:riscv-non-isa,proj:riscv-cbqri' />
     <project name='riscv-non-isa/riscv-device-tree-doc' revision='master' groups='org:riscv-non-isa,proj:riscv-device-tree-doc' />
     <project name='riscv-non-isa/riscv-elf-psabi-doc' revision='master' groups='org:riscv-non-isa,proj:riscv-elf-psabi-doc' />
+    <project name='riscv-non-isa/riscv-event-trace' revision='main' groups='org:riscv-non-isa,proj:riscv-event-trace' />
     <project name='riscv-non-isa/riscv-external-debug-security' revision='main' groups='org:riscv-non-isa,proj:riscv-external-debug-security' />
     <project name='riscv-non-isa/riscv-iommu' revision='main' groups='org:riscv-non-isa,proj:riscv-iommu' />
     <project name='riscv-non-isa/riscv-ras-eri' revision='main' groups='org:riscv-non-isa,proj:riscv-ras-eri' />
@@ -325,11 +333,16 @@
     <project name='riscv-software-src/riscv-config' revision='dev' groups='org:riscv-software-src,proj:riscv-config' />
     <project name='riscv-software-src/riscv-docs-docker' revision='main' groups='org:riscv-software-src,proj:riscv-docs-docker' />
     <project name='riscv-software-src/riscv-isa-sim' revision='master' groups='org:riscv-software-src,proj:riscv-isa-sim' />
+    <project name='riscv-software-src/riscv-mirror-fsl' revision='main' groups='org:riscv-software-src,proj:riscv-mirror-fsl' />
+    <project name='riscv-software-src/riscv-mirror-mavis' revision='main' groups='org:riscv-software-src,proj:riscv-mirror-mavis' />
+    <project name='riscv-software-src/riscv-mirror-stf-library' revision='master' groups='org:riscv-software-src,proj:riscv-mirror-stf-library' />
     <project name='riscv-software-src/riscv-overlay' revision='master' groups='org:riscv-software-src,proj:riscv-overlay' />
     <project name='riscv-software-src/riscv-perf-model' revision='master' groups='org:riscv-software-src,proj:riscv-perf-model' />
     <project name='riscv-software-src/riscv-pk' revision='master' groups='org:riscv-software-src,proj:riscv-pk' />
     <project name='riscv-software-src/riscv-tests' revision='master' groups='org:riscv-software-src,proj:riscv-tests' />
+    <project name='riscv-software-src/riscv-udb-generators' revision='main' groups='org:riscv-software-src,proj:riscv-udb-generators' />
     <project name='riscv-software-src/riscv-unified-db' revision='main' groups='org:riscv-software-src,proj:riscv-unified-db' />
+    <project name='riscv-software-src/sail-riscv-tests' revision='main' groups='org:riscv-software-src,proj:sail-riscv-tests' />
     <project name='riscv-software-src/se-sig-analysis' revision='main' groups='org:riscv-software-src,proj:se-sig-analysis' />
     <project name='riscv-software-src/template-riscv-code' revision='main' groups='org:riscv-software-src,proj:template-riscv-code' />
 </manifest>
