@@ -332,6 +332,8 @@
     <project name='riscv-software-src/riscv-brs-tests' revision='main' groups='org:riscv-software-src,proj:riscv-brs-tests' />
     <project name='riscv-software-src/riscv-config' revision='dev' groups='org:riscv-software-src,proj:riscv-config' />
     <project name='riscv-software-src/riscv-docs-docker' revision='main' groups='org:riscv-software-src,proj:riscv-docs-docker' />
+    <project name='riscv-software-src/riscv-etrace-lib' revision='' groups='org:riscv-software-src,proj:riscv-etrace-lib' />
+    <project name='riscv-software-src/riscv-hpc-benchmarks' revision='main' groups='org:riscv-software-src,proj:riscv-hpc-benchmarks' />
     <project name='riscv-software-src/riscv-isa-sim' revision='master' groups='org:riscv-software-src,proj:riscv-isa-sim' />
     <project name='riscv-software-src/riscv-mirror-fsl' revision='main' groups='org:riscv-software-src,proj:riscv-mirror-fsl' />
     <project name='riscv-software-src/riscv-mirror-mavis' revision='main' groups='org:riscv-software-src,proj:riscv-mirror-mavis' />
